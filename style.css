@@ -26,6 +26,44 @@ body {
   transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
 }
 
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(135deg, #a259e6 0%, #22223b 60%, #e0e0ff 100%);
+  }
+  .container {
+    max-width: 98vw;
+    width: 98vw;
+    min-height: unset;
+    padding: 18px 4vw 18px 4vw;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+    border-width: 2.5px;
+  }
+  h1 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 12px 0;
+    border-radius: 9px;
+  }
+  .links {
+    gap: 10px;
+  }
+}
+
 .container:hover {
   box-shadow: 0 12px 40px 0 rgba(162,89,230,0.25), 0 2px 8px rgba(0,0,0,0.10);
   background-color: rgba(255,255,255,0.32);
